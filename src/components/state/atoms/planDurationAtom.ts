@@ -1,5 +1,5 @@
 import { atom } from 'recoil';
-import { Duration } from '../../shared/types';
+import { Duration } from '../../../shared/types';
 
 export const planDurationAtom = atom<Duration>({
   key: 'planDuration',

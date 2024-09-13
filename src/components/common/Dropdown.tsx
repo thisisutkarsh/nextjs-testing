@@ -1,8 +1,21 @@
 'use client';
 
+import { Item, Link } from '@/shared/types';
 import { IconCheck, IconChevronDown, IconChevronUp } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
-import { Dropdown, Tab } from '../../shared/types';
+import { ReactElement, useEffect, useState } from 'react';
+// import { Dropdown, Tab } from '../../shared/types';
+interface Tab {
+  link?: Link;
+  items: Array<Item>;
+}
+
+interface Dropdown {
+  options: Tab[];
+  activeTab: number;
+  onActiveTabSelected: Function;
+  iconUp?: ReactElement;
+  iconDown?: ReactElement;
+}
 
 const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }: Dropdown) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
