@@ -1,0 +1,7 @@
+@media screen and (min-width: 768px) {
+  .player-size{
+    height: 700px!important;
+    width: 688px!important;
+  }
+}
+
