@@ -13,10 +13,10 @@ import { usePathname, useRouter } from 'next/navigation';
 import './ReactPlayer.css';
 import StepsImage from '../../assets/images/image-steps-section.webp';
 import Image from 'next/image';
-import GiftingFatherModal from 'app/(babynama)/gifting-father/GiftingFatherModal';
-import BTPPricingModal from 'app/(ads)/breastfeeding-training-program/BTPPaymentModal/BTPPricingModal';
+// import GiftingFatherModal from 'app/(babynama)/gifting-father/GiftingFatherModal';
+// import BTPPricingModal from 'app/(ads)/breastfeeding-training-program/BTPPaymentModal/BTPPricingModal';
 import { btpPlan } from '../../shared/data';
-const LactationModal = dynamic(() => import('app/(babynama)/lactation-consultation/LactationModal'));
+// const LactationModal = dynamic(() => import('app/(babynama)/lactation-consultation/LactationModal'));
 
 const Steps: React.FC<StepsProps> = ({ header, title, items, image, videoUrl, mp4VideoUrl, callToAction }) => {
   // Render video section on reaching the section
@@ -68,11 +68,11 @@ const Steps: React.FC<StepsProps> = ({ header, title, items, image, videoUrl, mp
     <section id="how" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <FreePreviewModal isFreePreviewModalOpen={isPaymentModalOpen} setIsFreePreviewModalOpen={setIsPaymentModalOpen} />
       <ViewBrochureModal isBrochureModalOpen={isBrochureModalOpen} setIsBrochureModalOpen={setIsBrochureModalOpen} />
-      <GiftingFatherModal
+      {/* <GiftingFatherModal
         isGiftingFatherModalOpen={isGiftingFatherModalOpen}
         setIsGiftingFatherModalOpen={setIsGiftingFatherModalOpen}
-      />
-      <LactationModal isLactationModalOpen={isLactationModalOpen} setIsLactationModalOpen={setIsLactationModalOpen} />
+      /> */}
+      {/* <LactationModal isLactationModalOpen={isLactationModalOpen} setIsLactationModalOpen={setIsLactationModalOpen} /> */}
       {isPrimePricingModalOpen && (
         <div className=" fixed inset-0 z-50 overflow-y-auto  ">
           <div
@@ -83,7 +83,7 @@ const Steps: React.FC<StepsProps> = ({ header, title, items, image, videoUrl, mp
             <div className="relative z-10 w-[370px] rounded bg-white px-2 pb-8 pt-10 shadow dark:bg-gray-800 sm:w-8/12 md:w-9/12">
               <div className="flex flex-col items-center overflow-hidden">
                 <div className="mt-4 flex w-full flex-col items-center sm:mt-6 ">
-                  <BTPPricingModal plans={btpPlan} />
+                  {/* <BTPPricingModal plans={btpPlan} /> */}
                 </div>
               </div>
               <div
@@ -126,7 +126,7 @@ const Steps: React.FC<StepsProps> = ({ header, title, items, image, videoUrl, mp
                   {/* Render steps */}
                   <div className="mr-4 flex flex-col items-center">
                     {/* Step icon */}
-                    <div>
+                    {/* <div>
                       {index !== items.length - 1 ? (
                         <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary-900">
                           {Icon ? (
@@ -144,7 +144,7 @@ const Steps: React.FC<StepsProps> = ({ header, title, items, image, videoUrl, mp
                           )}
                         </div>
                       )}
-                    </div>
+                    </div> */}
                     {index !== items.length - 1 && <div className="h-full w-px bg-gray-300 dark:bg-slate-500"></div>}
                   </div>
                   <div className={`pt-1 ${index !== items.length - 1 ? 'mb-4 pb-8' : ''}`}>

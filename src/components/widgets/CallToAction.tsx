@@ -1,4 +1,9 @@
-import { CallToActionProps, CallToAction } from '../../shared/types';
+import { CallToActionProps } from '../../shared/types';
+interface CallToAction {
+  text: string;
+  href: string;
+  icon?: Function;
+}
 
 const CallToAction = (props: { cta: CallToActionProps }) => {
   const { title, subtitle, callToAction } = props.cta;
@@ -18,7 +23,7 @@ const CallToAction = (props: { cta: CallToActionProps }) => {
             {text && href && (
               <div className="mx-auto mt-6 max-w-xs">
                 <a className="btn btn-primary w-full sm:w-auto" href={href}>
-                  {Icon && <Icon className="-ml-1.5 mr-1 h-5 w-5" />} {text}
+                   {text}
                 </a>
               </div>
             )}

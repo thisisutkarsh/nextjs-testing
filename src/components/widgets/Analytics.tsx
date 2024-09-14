@@ -1,7 +1,7 @@
 // Analytics.tsx
 'use client';
 
-import { GTM_ID, pageview } from '~/lib/gtm';
+// import { GTM_ID, pageview } from '~/lib/gtm';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Script from 'next/script';
 import { useEffect } from 'react';
@@ -10,11 +10,11 @@ export default function Analytics() {
   const pathname = usePathname();
   const searchParams = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
 
-  useEffect(() => {
-    if (pathname) {
-      pageview(pathname);
-    }
-  }, [pathname, searchParams]);
+  // useEffect(() => {
+  //   if (pathname) {
+  //     pageview(pathname);
+  //   }
+  // }, [pathname, searchParams]);
 
   //  Disable analytics for localhost and "vercel" domain
    if (
@@ -33,7 +33,7 @@ export default function Analytics() {
           __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
         }}
       /> */}
-      <Script
+      {/* <Script
         id="gtm-script"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -45,7 +45,7 @@ export default function Analytics() {
     })(window,document,'script','dataLayer', '${GTM_ID}');
   `,
         }}
-      />
+      /> */}
     </>
   );
 }

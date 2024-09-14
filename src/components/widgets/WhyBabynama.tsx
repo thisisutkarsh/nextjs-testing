@@ -2,10 +2,10 @@ import Image from 'next/image';
 import { CareWhyBabynamaProps } from '../../shared/types';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import BTPPricingModal from 'app/(ads)/breastfeeding-training-program/BTPPaymentModal/BTPPricingModal';
+// import BTPPricingModal from 'app/(ads)/breastfeeding-training-program/BTPPaymentModal/BTPPricingModal';
 import { btpPlan, motherhoodCareplan } from '../../shared/data';
 import FreePreviewModal from '../../components/widgets/FreePreviewModal';
-import MotherhoodPricingModal from 'app/(ads)/motherhood-webinar/PrimePaymentModal/MotherhoodPricingModal';
+// import MotherhoodPricingModal from 'app/(ads)/motherhood-webinar/PrimePaymentModal/MotherhoodPricingModal';
 const WhyBabynama: React.FC<CareWhyBabynamaProps> = ({ title, subtitle1, features, image }) => {
   const pathname = usePathname();
   const [isPrimePricingModalOpen, setIsPrimePricingModalOpen] = useState(false);
@@ -39,7 +39,7 @@ const WhyBabynama: React.FC<CareWhyBabynamaProps> = ({ title, subtitle1, feature
             <div className="relative z-10 w-[370px] rounded bg-white px-2 pb-8 pt-10 shadow dark:bg-gray-800 sm:w-8/12 md:w-9/12">
               <div className="flex flex-col items-center overflow-hidden">
                 <div className="mt-4 flex w-full flex-col items-center sm:mt-6 ">
-                  <BTPPricingModal plans={btpPlan} />
+                  {/* <BTPPricingModal plans={btpPlan} /> */}
                 </div>
               </div>
               <div
@@ -96,7 +96,7 @@ const WhyBabynama: React.FC<CareWhyBabynamaProps> = ({ title, subtitle1, feature
                 <line x1={6} y1={6} x2={18} y2={18} />
               </svg>
             </div>
-            <MotherhoodPricingModal plans={motherhoodCareplan} />
+            {/* <MotherhoodPricingModal plans={motherhoodCareplan} /> */}
           </div>
         </div>
       )}

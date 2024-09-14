@@ -99,7 +99,7 @@ const AdminNavbar: React.FC<AdminNavbarProps> = ({ showSidebar, setShowSidebar }
                           className="flex items-center px-4 py-3 font-semibold transition duration-150 ease-in-out hover:text-gray-900 dark:hover:text-white"
                           onClick={() => handleDropdownOnClick(index)}
                         >
-                          {label} {Icon && <Icon className="ml-0.5 rotate-90 transition-transform" />}
+                          {label}
                         </button>
                         <ul
                           className={`${

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ComparisonPlan } from '~/shared/types';
+import { ComparisonPlan } from '../shared/types';
 
 const comparisonCouponValidation = (plan:ComparisonPlan , isThreeMonthly: boolean, couponCode?: string): boolean => {
   couponCode = couponCode?.toUpperCase().replace(/\s+/g, '');

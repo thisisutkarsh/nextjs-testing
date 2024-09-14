@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Plan } from '~/shared/types';
+import { Plan } from '../shared/types';
 
 const couponValidation = (plan: Plan, isSixMonthly: boolean, couponCode?: string): boolean => {
   if (couponCode) {

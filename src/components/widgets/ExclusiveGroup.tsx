@@ -7,8 +7,21 @@ import 'react-phone-input-2/lib/style.css';
 import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import axios from 'axios';
-import { ExclusiveGroup } from '../../shared/types';
 import { Exclusive } from '../../shared/data';
+
+interface ExclusiveGroup {
+  groupLink: string;
+  buttonText1: string;
+  title1: string;
+  buttonText2: string;
+  whatsappButtonText: string;
+  planButtonText: string;
+  otpTitle: string;
+  otpButtonText: string;
+  InfoTitle: string;
+  title2: string;
+  paragraph: any;
+}
 
 const Completionist: React.FC<ExclusiveGroup> = ({ groupLink, buttonText1 }) => (
   <Link href={groupLink}>

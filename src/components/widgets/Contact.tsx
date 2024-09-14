@@ -17,7 +17,7 @@ const Contact = () => {
                 {items.map(({ title, description, icon: Icon }, index) => (
                   <li key={`item-contact-${index}`} className="flex">
                     <div className="flex h-10 w-10 items-center justify-center rounded bg-primary-900 text-gray-50">
-                      {Icon && <Icon className="h-6 w-6" />}
+                      {/* {Icon && <Icon className="h-6 w-6" />} */}
                     </div>
                     <div className="mb-4 ml-4">
                       <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">{title}</h3>

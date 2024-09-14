@@ -117,14 +117,14 @@ const Sidebar = () => {
                                 )}
                                 {label}
                               </button>
-                              {Icon && (
+                              {/* {Icon && (
                                 <Icon
                                   size={20}
                                   className={`pl-auto flex text-gray-900 transition-transform ${
                                     isDropdownOpen[index] ? 'rotate-90' : ''
                                   }`}
                                 />
-                              )}
+                              )} */}
                             </div>
                             <ul className={`${isDropdownOpen[index] ? 'block' : 'hidden'} rounded pl-8 drop-shadow-xl`}>
                               {links.map(({ label: label2, href: href2, image: image2 }, index2) => (

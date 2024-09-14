@@ -18,7 +18,7 @@ const ProgramSteps: React.FC<StepsProps> = ({ header, title, items, image, video
                   {/* Render steps */}
                   <div className="mr-4 flex flex-col items-center">
                     {/* Step icon */}
-                    <div>
+                    {/* <div>
                       {index !== items.length - 1 ? (
                         <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary-900">
                           {Icon ? (
@@ -36,7 +36,7 @@ const ProgramSteps: React.FC<StepsProps> = ({ header, title, items, image, video
                           )}
                         </div>
                       )}
-                    </div>
+                    </div> */}
                     {index !== items.length - 1 && <div className="h-full w-px bg-gray-300 dark:bg-slate-500"></div>}
                   </div>
                   <div className={`pt-1 ${index !== items.length - 1 ? 'pb-4' : ''}`}>

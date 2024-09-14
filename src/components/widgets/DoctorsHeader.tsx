@@ -110,7 +110,7 @@ const Header: React.FC<HeaderProps & { logo: React.ReactNode; logoHref: string }
                      
                       }}
                     >
-                      {label} {Icon && <Icon className="ml-0.5 inline h-3.5 w-3.5" />}
+                      {label}
                     </button>
                     <ul
                       className={`${

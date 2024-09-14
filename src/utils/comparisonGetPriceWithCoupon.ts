@@ -1,4 +1,4 @@
-import { ComparisonPlan, Coupon } from '~/shared/types';
+import { ComparisonPlan, Coupon } from '../shared/types';
 
 export const ComparisonGetPriceWithCoupon = (
   plan: ComparisonPlan ,

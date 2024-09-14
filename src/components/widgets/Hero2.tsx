@@ -26,7 +26,7 @@ const Hero2 = () => {
                   {callToAction && callToAction.text && callToAction.href && (
                     <div className="flex w-full sm:w-auto">
                       <a className="btn btn-primary w-full sm:mb-0" href={callToAction.href}>
-                        {callToAction.icon && <callToAction.icon className="-ml-1.5 mr-1 h-5 w-5" />}{' '}
+                        {/* {callToAction.icon && <callToAction.icon className="-ml-1.5 mr-1 h-5 w-5" />}{' '} */}
                         {callToAction.text}
                       </a>
                     </div>
@@ -34,7 +34,7 @@ const Hero2 = () => {
                   {callToAction2 && callToAction2.text && callToAction2.href && (
                     <div className="flex w-full sm:w-auto">
                       <a className="btn w-full" href={callToAction2.href}>
-                        {callToAction2.icon && <callToAction2.icon className="-ml-1.5 mr-1 h-5 w-5" />}{' '}
+                        {/* {callToAction2.icon && <callToAction2.icon className="-ml-1.5 mr-1 h-5 w-5" />}{' '} */}
                         {callToAction2.text}
                       </a>
                     </div>

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { UpdatedPlan, Duration } from '~/shared/types';
+import { UpdatedPlan, Duration } from '../shared/types';
 
 export const updatedGetPriceFromCoupon = async (
   planId: number,

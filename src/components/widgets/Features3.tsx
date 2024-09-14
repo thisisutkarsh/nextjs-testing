@@ -12,7 +12,7 @@ const Features3 = ({ header, items }: FeaturesProps) => (
             className="flex flex-col justify-between rounded-lg bg-white p-6 shadow-md"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-md bg-primary-900">
-              {Icon && <Icon className="h-6 w-6 text-white" />}
+              {/* {Icon && <Icon className="h-6 w-6 text-white" />} */}
             </div>
             <div className="mt-6">
               <h3 className="text-lg font-medium text-gray-900">{title}</h3>
