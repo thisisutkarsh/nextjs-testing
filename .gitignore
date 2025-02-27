@@ -4,10 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
-.yarn/install-state.gz
+/.lighthouseci
+package-lock.json
 
 # testing
 /coverage
+.env
 
 # next.js
 /.next/
@@ -19,11 +21,13 @@
 # misc
 .DS_Store
 *.pem
+*.txt
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
 # local env files
 .env*.local
@@ -34,3 +38,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vscode
+
+
+public/sitemap.xml
+public/sitemap-0.xml
+public/robots.txt
+
+# Sentry Auth Token
+.sentryclirc
+
+# Sentry Config File
+.sentryclirc
+
+.vercel
