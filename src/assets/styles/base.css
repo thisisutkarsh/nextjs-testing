@@ -1,13 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-  color-scheme: light;
-}
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center rounded-md border border-gray-400 bg-transparent px-6 py-3 text-center text-base font-medium leading-snug text-gray-700 shadow-md transition duration-200 ease-in hover:cursor-pointer hover:border-gray-600 hover:bg-gray-100 focus:ring-2 focus:ring-cta-500 focus:ring-offset-2 focus:ring-offset-cta-200 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-cta-600 disabled:hover:text-white disabled:hover:opacity-50 dark:border-slate-500 dark:text-slate-300 dark:hover:border-slate-800 dark:hover:bg-slate-800 md:px-8;
+    @apply inline-flex items-center justify-center rounded-md border border-gray-400 bg-transparent py-3 px-6 text-center text-base font-medium leading-snug text-gray-700 shadow-md transition duration-200 ease-in hover:border-gray-600 hover:bg-gray-100 focus:ring-2 focus:ring-cta-500 focus:ring-offset-2 focus:ring-offset-cta-200 dark:border-slate-500 dark:text-slate-300 dark:hover:border-slate-800 dark:hover:bg-slate-800 md:px-8 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:opacity-50 disabled:hover:bg-cta-600 disabled:hover:text-white hover:cursor-pointer ;
   }
 
   .btn-ghost {
@@ -19,43 +16,39 @@
   }
 
   .card-main {
-    @apply rounded-md border-gray-200 bg-white px-6 pb-8 pt-10 shadow-xl transition duration-300 ease-in-out dark:border dark:border-slate-800 dark:bg-slate-900;
+    @apply rounded-md border-gray-200 bg-white px-6 pt-10 pb-8 shadow-xl transition duration-300 ease-in-out dark:border dark:border-slate-800 dark:bg-slate-900;
   }
 
   .ribbon {
-    @apply absolute right-[-21px] top-[19px] block w-full rotate-45 bg-green-700 text-center text-[10px] font-bold uppercase leading-5 text-white shadow-[0_3px_10px_-5px_rgba(0,0,0,0.3)] before:absolute before:left-0 before:top-full before:z-[-1] before:border-[3px] before:border-b-transparent before:border-l-green-800 before:border-r-transparent before:border-t-green-800 before:content-[''] after:absolute after:right-0 after:top-full after:z-[-1] after:border-[3px] after:border-b-transparent after:border-l-transparent after:border-r-green-800 after:border-t-green-800 after:content-[''];
+    @apply absolute top-[19px] right-[-21px] block w-full rotate-45 bg-green-700 text-center text-[10px] font-bold uppercase leading-5 text-white shadow-[0_3px_10px_-5px_rgba(0,0,0,0.3)] before:absolute before:left-0 before:top-full before:z-[-1] before:border-[3px] before:border-r-transparent before:border-b-transparent before:border-l-green-800 before:border-t-green-800 before:content-[''] after:absolute after:right-0 after:top-full after:z-[-1] after:border-[3px] after:border-l-transparent after:border-b-transparent after:border-r-green-800 after:border-t-green-800 after:content-[''];
   }
-  .normal-banner{
-    @apply w-full bg-[url('https://gh-public-contents.s3.ap-south-1.amazonaws.com/babynama-web/normal-banner.png')] bg-cover bg-center  bg-no-repeat md:bg-contain md:bg-repeat-x;
+
+  .btn-weaning {
+    @apply  rounded-md border border-gray-400 bg-transparent py-4 px-3 text-base font-medium leading-snug text-gray-700 shadow-md transition duration-200 ease-in hover:border-gray-600 hover:bg-gray-100 focus:ring-2 focus:ring-cta-500 focus:ring-offset-2 focus:ring-offset-cta-200 dark:border-slate-500 dark:text-slate-300 dark:hover:border-slate-800 dark:hover:bg-slate-800 md:px-8 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:opacity-50 disabled:hover:bg-cta-600 disabled:hover:text-white ;
   }
-  .black-friday-banner{
-    @apply w-full bg-[url('../images/banner/black-friday-banner.png')] bg-cover bg-center  bg-no-repeat md:bg-contain md:bg-repeat-x;
+  .diwali-banner{
+    @apply bg-[url('https://gh-public-contents.s3.ap-south-1.amazonaws.com/diwali-banner.png')] bg-contain bg-center bg-no-repeat md:bg-repeat-x;
+  }
+  .christmas-banner{
+    @apply bg-[url('https://gh-public-contents.s3.ap-south-1.amazonaws.com/Gold+and+Beige+Elegant+Christmas+Tree+Lighting+Banner+(1).webp')] bg-contain bg-center bg-no-repeat md:bg-repeat-x;
+  }
+  .republic-banner{
+    @apply bg-[url('../images/banner/replublic-day-banner.webp')] bg-contain bg-center bg-no-repeat md:bg-repeat-x;
+  }
+  .holi-banner{
+    @apply bg-[url('https://gh-public-contents.s3.ap-south-1.amazonaws.com/holi-banner.png')] bg-contain bg-center bg-no-repeat md:bg-repeat-x;
   }
 }
+
+
 
 .glare {
   width: 40px;
   height: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.3) 24%,
-    rgba(255, 255, 255, 0) 26%,
-    rgba(255, 255, 255, 0) 53%,
-    rgba(255, 255, 255, 0.3) 54%
-  );
+  background-image: linear-gradient(to right, rgba(255, 255, 255, .3) 24%, rgba(255, 255, 255, 0) 26%, rgba(255, 255, 255, 0) 53%, rgba(255, 255, 255, .3) 54%);
   position: absolute;
   top: 0%;
   bottom: 0%;
   left: -21%;
   right: 0%;
-}
-
-.rotate-90 {
-  transform: rotate(90deg);
-}
-
-@layer base {
-  :root {
-    --radius: 0.5rem;
-  }
 }
